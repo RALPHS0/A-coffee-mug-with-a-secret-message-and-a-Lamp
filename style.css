@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #cfd1e1;
+    overflow: hidden;
+}
+
+.room{
+  position:absolute;
+  width:100%;
+  height:50vh;
+  background-color: #8D46E9;
+  overflow:hidden;
+}
+
+.circ{
+  position:absolute;
+  width:100%;
+  height:50vh;
+  border-radius:50%;
+  background-color: #9A60E6;
+  box-shadow: 10px 0 2px #8948DE;
+  left:-50%;
+}
+
+.light-cable{
+  position: absolute;
+  width:15px;
+  height:7vh;
+  background-color: #2B1944;
+  left:50%;
+box-shadow: 2px 0 0 #342652;
+}
+
+.Lamp{
+position:absolute;
+width:10vh;
+height:10vh;
+top:10%;
+transform:rotate(45deg);
+background-color: #8D35EF;
+left:41%;
+border-top-left-radius: 100%;
+border-top-right-radius: 50%;
+border-bottom-left-radius: 50%;
+border-bottom-right-radius:100% ;
+box-shadow:5px 0 2px #7C21E1;
+z-index:1;
+
+}
+
+.Lamp:before{
+position:absolute;
+width:10vh;
+height:10vh;
+top:10%;
+transform:rotate(45deg);
+background-color: #8D35EF;
+left:41%;
+border-top-left-radius: 100%;
+border-top-right-radius: 50%;
+border-bottom-left-radius: 50%;
+border-bottom-right-radius:100% ;
+box-shadow:5px 0 2px #7C21E1;
+}
+
+.Lamp:hover{
+  position:absolute;
+width:10vh;
+height:10vh;
+top:10%;
+transform:rotate(45deg);
+background-color: #A100FF;
+left:41%;
+border-top-left-radius: 100%;
+border-top-right-radius: 50%;
+border-bottom-left-radius: 50%;
+border-bottom-right-radius:100% ;
+box-shadow:10px 0 10px #9E20DC;
+transition:0.5s ease-in-out;
+}
+
+.light{
+  position:absolute;
+  width:15vh;
+  height:20vh;
+  left:36.5%;
+  top:15%;
+  border-top-left-radius:50%;
+  border-top-right-radius: 50%;
+  transition:0.5s ease-in-out;
+  
+}
+
+.Lamp:hover+.light{
+  background-color:hsla(57,35%,69%,0.66);
+  box-shadow: 0 0 5px hsla(57, 35%, 69%, 0.66);
+  border-top-left-radius:50%;
+  border-top-right-radius: 50%;
+}
+
+.mug{
+  position:absolute;
+  width:10vh;
+  height:15vh;
+  background-color: #BCBCBC;
+  left:43%;
+  top:65%;
+  clip-path: polygon(0 0 ,100% 0, 85% 100%,15% 100%);
+  box-shadow: 0px 0px 0 #A7A7A7;
+}
+
+.paper{
+  position:absolute;
+  width:100%;
+  height:40%;
+  background-color: #1A9DCA;
+  top:30%;
+  overflow:hidden;
+}
+
+.hatMug{
+  position:absolute;
+  width:12vh;
+  height:3vh;
+  background-color: #380606;
+  top:60%;
+  left:41%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; 
+  overflow:hidden;
+}
+
+.deco{
+  width:100%;
+  height:10px;
+  background-color:#460404;
+  position:absolute;
+  top:80%;
+}
+
+.deco2{
+  width:40px;
+  height:20px;
+  background-color: #380606;
+  position:absolute;
+  top:58%;
+  left:57.5%;
+  border-top-left-radius:3px;
+  border-top-right-radius: 3px;
+  overflow:hidden;
+}
+
+.deco3{
+  width:100%;
+  height:10px;
+  background-color:#460404;
+  position:absolute;
+  top:5%;
+}
+
+.heart1{
+  position: absolute ;
+  left:35%;
+  top:38%;
+  background-color: #1A9DCA;
+  width:30px;
+  height:55px;
+  border-radius:50%;
+  transform:rotate(-35deg);
+  transition:0.5s ease-in-out;
+  z-index:3;
+}
+
+.heart2{
+  position: absolute ;
+  left:45%;
+  top:38%;
+  background-color: #1A9DCA;
+  width:30px;
+  height:55px;
+  border-radius:50%;
+  transform:rotate(35deg);
+  transition: 0.5s ease-in-out;
+  z-index:3;
+}
+
+.heart1:hover{
+  background-color: red;
+  transition :0.5s ease-in-out;
+}
+
+.heart1:hover+.heart2{
+background-color: red;
+transition:0.5s ease-in-out;
+}
